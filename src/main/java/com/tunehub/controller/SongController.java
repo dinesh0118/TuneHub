@@ -32,6 +32,16 @@ public class SongController {
 		
 		return "adminHome";
 	}
+	
+	@GetMapping("/viewSongs")
+	public String viewSongs(Model model) {
+		
+		List<Song> songsList = service.fetchAllSongs();
+		model.addAttribute("songs", songsList);
+		
+		return "displaySongs";
+	}
+	
 	@GetMapping("/playSongs")
 	public String playSongs(Model model) {
 		

@@ -1,0 +1,43 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+	
+}
+body {
+	text-align: center;
+	background-image: url("index.jpg");
+	background-size: 100% auto;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	height: 105vh;
+  	width: 100vw;
+	
+}
+h1{
+	position: absolute;
+	top:20%;
+	left: 45%;
+	color: white;
+	
+}
+.f1{
+	position: absolute;
+	top:30%;
+	left: 40%;
+}
+label{
+	margin: 10px;
+}
+input{
+	margin:10px;
+}
+.f1 div{
+	display: flex;
+	justify-content: space-between;
+	background: transparent;
+	background-image: url("");
+	color: white;
+}
+

@@ -1,4 +1,68 @@
 body{
-	background-color: yellow;
 	text-align: center;
+	background: linear-gradient(60deg, black,#ff004f,black);
+	background-size: 100% auto;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	height: 105vh;
+  	width: 100vw;
+  	
+	
 }
+
+button {
+	border-radius: 10px;
+	font-size: 12px;
+	padding: 10px;
+	background-color: #FF69B4;
+	color: white;
+	box-shadow: 10px;
+	
+}
+
+button {
+  border-radius: 10px;
+  font-size: 12px;
+  padding: 10px 20px; /* Adjust padding for better spacing */
+  background-color:#ff004f;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  /* Remove the default button border */
+  cursor: pointer; /* Add pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Add smooth transition for background color change */
+
+  /* Optional: Add more styles for hover and focus states */
+}
+
+button:hover {
+  background-color: threedhighlight; /* Change background color on hover */
+}
+
+button:focus {
+  outline: none; /* Remove default focus outline */
+  box-shadow: 0 0 0 3px rgba(255, 105, 180, 0.5); /* Add a custom focus outline */
+}
+
+#mid{
+	text-align: center;
+	font-family:'sans-serif' system-ui;
+	color: rgb(7, 7, 7);
+	position: absolute;
+	top: 35%;
+  	left: 52%;
+  	transform: translate(-50%, -50%);
+	
+}
+
+@keyframes colorBlink {
+      0% { color: rgb(218,112,214); } /* Red */
+      25% { color: 	rgb(255,20,147); } /* Green */
+      50% { color: 	rgb(0,191,255); } /* Blue */
+      75% { color: rgb(0,0,0); } /* Yellow */
+      100% { color: rgb(255, 0, 255); } /* Magenta */
+    }
+
+h1 {
+      color: white;
+      animation: colorBlink 5s infinite; /* 5 seconds duration, infinite loop */
+    }
